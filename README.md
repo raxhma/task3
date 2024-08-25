@@ -15,4 +15,4 @@ HTML: Structure of the game interface.
 CSS: Styling and layout of the gameboard and UI elements.
 JavaScript: Game logic, event handling, and animations.
 canvas-confetti: Library for creating confetti animations.
-[Try the Tic Tac Toe Game Online](https://your-deployed-url.com)
+[Try the Tic Tac Toe Game Online](http://127.0.0.1:5500/task3.html)
