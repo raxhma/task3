@@ -1,0 +1,95 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --pink: #f8b6eb;
+    --winning-blocks: #dc8dd8;
+}
+
+body {
+    color: var(--orange);
+    font-family: 'Lucida Console', cursive;
+}
+
+h1 {
+    font-size: 54px;
+    text-transform: uppercase;
+}
+
+
+.container {
+    padding: 40px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: radial-gradient(circle, #f2e4ee, #FF69B4);
+
+}
+
+
+#gameboard {
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-size: 120px;
+    border-right: 5px solid;
+    border-bottom: 5px solid;
+}
+
+.box:nth-child(3n) {
+    border-right: none;
+}
+
+.box:nth-child(6) ~ .box {
+    border-bottom: none;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: var(--orange);
+    color: #dd4b94;
+    border-color: var(--orange);
+    font-size: 18px;
+    transition: 200ms transform;
+    font-weight: 600;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+}
+
+#gifContainer {
+    margin-top: 10px;
+}
+
+#gifContainer img {
+    width: 100px;
+}
+
+#tieMessage {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #fff;
+}
+
+.hidden {
+    display: none;
+}
